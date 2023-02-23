@@ -2,11 +2,11 @@ fun main() {
     words("Carpenter", "Plumber", "Mechanic", "Tailor")
     capital()
     sums()
-    println(sentence("Battery","Hair","Bones"))
+    sentence("Melinda, Sarah, Benjamin")
 }
 fun words(x: String, y: String, z: String, p: String){
  var names = arrayOf(x, y, z, p)
-    println(names)
+    println(names.contentToString())
 }
 fun capital() {
     var cities = arrayOf("Harare", "mumbai", "dodoma", "jakarta")
@@ -22,8 +22,8 @@ fun sums() {
     println(numbers.indexOf(158))
     println(numbers.sortedArray().contentToString())
 }
-fun sentence(a: String, b: String, c: String): String {
-    var sentences = arrayOf(a,b,c,)
+fun sentence(name: String):String{
+    var sentences = arrayOf(String)
     return sentences.contentToString()
 
 
